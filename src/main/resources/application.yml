@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: spring-file-storage
+
+  datasource:
+    url: jdbc:mysql://localhost:33063/test_db?serverTimezone=UTC&characterEncoding=UTF-8
+    username: test
+    password: test@1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      pool-name: My-Hikari-Pool
+      maximum-pool-size: 10  # ?? ??? ?
+      minimum-idle: 2        # ?? ?? ??? ?
+      idle-timeout: 30000    # ?? ??? ?? ?? ?? (30?)
+      max-lifetime: 1800000  # ??? ?? ?? ?? (30?)
+      connection-timeout: 3000  # ??? ?? ?? ?? ?? (3?)
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
