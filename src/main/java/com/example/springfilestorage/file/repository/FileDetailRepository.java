@@ -1,6 +1,6 @@
-package com.example.springfilestorage.file.detail.repository;
+package com.example.springfilestorage.file.repository;
 
-import com.example.springfilestorage.file.detail.entity.FileDetailEntity;
+import com.example.springfilestorage.file.entity.FileDetailEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

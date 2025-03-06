@@ -1,7 +1,7 @@
-package com.example.springfilestorage.file.master.entity;
+package com.example.springfilestorage.file.entity;
 
 import com.example.springfilestorage.core.entity.BaseEntity;
-import com.example.springfilestorage.file.detail.entity.FileDetailEntity;
+import com.example.springfilestorage.file.entity.FileDetailEntity;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
